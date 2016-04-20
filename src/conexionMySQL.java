@@ -18,7 +18,7 @@ public class conexionMySQL {
                   Logger.getLogger(conexionMySQL.class.getName()).log(Level.SEVERE, null, ex);
               }
           try {
-                       conex = DriverManager.getConnection("jdbc:mysql://"+ip+"/enlace",User,Pass);
+                       conex = DriverManager.getConnection("jdbc:mysql://"+ip+"/cubohotel",User,Pass);
         } catch (SQLException ex) {
             Logger.getLogger(conexionMySQL.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null,"Error de conexion"+ ex);

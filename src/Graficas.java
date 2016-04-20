@@ -336,7 +336,8 @@ public class Graficas extends javax.swing.JFrame {
            PreparedStatement ps = con.prepareStatement(sql);
            ResultSet rs = ps.executeQuery();
            
-           while(rs.next()){   
+           while(rs.next()){
+           
              if (cont <= 10){
             data.setValue(rs.getString("nombre"), rs.getDouble("promedio"));
             cont++;
